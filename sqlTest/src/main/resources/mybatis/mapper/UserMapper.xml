@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.dao.UserDao">
+
+    <!-- 嵌套结果 id是该resultMap的名称，type是返回值-->
+    <resultMap id="getOrders" type="Orders">
+        <id property="id" column="id"></id>
+        <result property="user_id" column="user_id"></result>
+        <association property="user" javaType="User">
+            <id property="id" column="id"></id>
+            <result property="username" column="username" javaType="String"></result>
+            <result property="realname" column="realname" javaType="String"></result>
+            <result property="password" column="password" javaType="String"></result>
+        </association>
+    </resultMap>
+    <!-- 首先将表通过id链接起来-->
+    <select id="getOrdersById" parameterType="int" resultMap="getOrders">
+        SELECT *
+        FROM orders o,user u
+        WHERE o.user_id=u.id AND o.id=#{id}
+    </select>
+
+    <!--
+    <select id="getUserOrders" parameterType="int" resultType="Orders">
+        SELECT * FROM orders WHERE user_id = #{id}
+    </select>
+    -->
+
+    <!-- 嵌套查询
+    <select id="getUser" parameterType="int" resultType="User">
+        SELECT * FROM user WHERE id = #{user_id}
+    </select>
+    <resultMap id="getOrders2" type="Orders">
+        <id property="id" column="id"></id>
+        <result property="user_id" column="user_id"></result>
+        <association property="user" column="user_id" select="getUser"></association>
+    </resultMap>
+    <select id="getOrdersById" parameterType="int" resultMap="getOrders2">
+        SELECT * FROM orders WHERE id = #{id}
+    </select>
+    -->
+
+    <resultMap id="getUserOrders" type="User">
+        <id property="id" column="id"></id>
+        <result property="username" column="username"></result>
+        <result property="realname" column="realname"></result>
+        <result property="password" column="password"></result>
+        <collection property="list" ofType="Orders" column="userid"><!--
+        两个表中主键重名导致查询结果只有1个，故需要重新设置一个别名-->
+            <id property="id" column="userid"></id>
+            <result property="user_id" column="user_id"></result>
+        </collection>
+    </resultMap>
+
+    <select id="getUserOrders" resultMap="getUserOrders" parameterType="int" resultType="User">
+        SELECT u.*,o.*
+        FROM user u, orders o
+        WHERE u.id=o.user_id AND u.id=#{id}
+    </select>
+
+</mapper>

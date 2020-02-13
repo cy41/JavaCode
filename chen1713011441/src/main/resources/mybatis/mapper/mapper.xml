@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="chen1713011441.demo.dao.Cy_Dao">
+    <insert id="insert"
+            parameterType="cy_Stu"
+            useGeneratedKeys="true"
+            keyProperty="cy_stu_id"
+            keyColumn="cystu_id"
+    >
+        INSERT INTO cystu(cystu_name,cystu_origin)
+        VALUES(#{cy_stu_name},#{cy_stu_origin})
+    </insert>
+
+    <resultMap id="select" type="cy_Stu">
+        <id property="cy_stu_id" column="cystu_id"></id>
+        <result property="cy_stu_name" column="cystu_name"></result>
+        <result property="cy_stu_origin" column="cystu_origin"></result>
+        <collection property="list" ofType="cy_Course">
+            <id property="cy_course_id" column="cycourse_id"></id>
+            <result property="cy_course_name" column="cycourse_name"></result>
+        </collection>
+    </resultMap>
+
+    <select id="select" resultMap="select" resultType="cy_Stu">
+        SELECT *
+        FROM cystu cs
+        LEFT JOIN cychoose cc on cs.cystu_id = cc.cystu_id
+        LEFT JOIN cycourse ccc on cc.cycourse_id = ccc.cycourse_id
+        WHERE cs.cystu_id = #{id}
+    </select>
+
+
+</mapper>

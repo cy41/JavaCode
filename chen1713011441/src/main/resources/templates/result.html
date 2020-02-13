@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>result</title>
+</head>
+<body>
+    <br th:text="学生信息">
+    <table border="1">
+        <tr>
+            <td>学号</td>
+            <td>姓名</td>
+            <td>籍贯</td>
+        </tr>
+        <tr>
+            <td>[[${stu.cy_stu_id}]]</td>
+            <td>[[${stu.cy_stu_name}]]</td>
+            <td>[[${stu.cy_stu_origin}]]</td>
+        </tr>
+    </table>
+    <br th:text="该生的选课信息">
+    <table border="1">
+        <tr>
+            <td>课程号</td>
+            <td>课程名</td>
+        </tr>
+        <tr th:each="cs : ${stu.list}">
+            <td>[[${cs.cy_course_id}]]</td>
+            <td>[[${cs.cy_course_name}]]</td>
+        </tr>
+    </table>
+
+</body>
+</html>
