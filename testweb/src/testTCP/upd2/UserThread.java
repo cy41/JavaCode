@@ -19,7 +19,7 @@ public class UserThread implements Runnable{
         try{
             BufferedReader br = new BufferedReader(new InputStreamReader(
                     socket.getInputStream()));
-            BufferedWriter bw = new BufferedWriter(new FileWriter("cy41.txt"));
+            BufferedWriter bw = new BufferedWriter(new FileWriter(System.currentTimeMillis()+".txt"));
             String line = null;
             while((line = br.readLine())!=null){
                 bw.write(line);
