@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="294dd9ea-c350-4ade-8b7f-497c1c04afca" name="Default Changelist" comment="" />
+    <list default="true" id="294dd9ea-c350-4ade-8b7f-497c1c04afca" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cy41.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hello.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/testTCP/upd/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/testTCP/upd/Receive.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/testTCP/upd2/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/testTCP/upd2/Server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/testTCP/upd2/UserThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +26,13 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1XjeMeGKBHOVv59r8wpF8sBvrDt" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -39,7 +54,33 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Client">
+  <component name="RunManager" selected="Application.Client (2)">
+    <configuration name="Client (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="testTCP.upd.Client" />
+      <module name="testweb" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testTCP.upd.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Client (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="testTCP.upd2.Client" />
+      <module name="testweb" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testTCP.upd2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="testTCP.Client" />
       <module name="testweb" />
@@ -53,12 +94,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Receive" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sendorget.Receive" />
+    <configuration name="Receive (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="testTCP.upd.Receive" />
       <module name="testweb" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="sendorget.*" />
+          <option name="PATTERN" value="testTCP.upd.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -66,38 +107,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Send" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sendorget.Send" />
+    <configuration name="Server (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="testTCP.upd2.Server" />
       <module name="testweb" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="sendorget.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="testTCP.Server" />
-      <module name="testweb" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testTCP.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="testUDP" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="testUDP.upd.testUDP" />
-      <module name="testweb" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testUDP.upd.*" />
+          <option name="PATTERN" value="testTCP.upd2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -107,11 +122,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Client (2)" />
+        <item itemvalue="Application.Server (1)" />
+        <item itemvalue="Application.Client (1)" />
+        <item itemvalue="Application.Receive (1)" />
         <item itemvalue="Application.Client" />
-        <item itemvalue="Application.Server" />
-        <item itemvalue="Application.testUDP" />
-        <item itemvalue="Application.Send" />
-        <item itemvalue="Application.Receive" />
       </list>
     </recent_temporary>
   </component>
@@ -127,11 +142,29 @@
       <updated>1581563884553</updated>
       <workItem from="1581563888412" duration="3595000" />
       <workItem from="1581591725217" duration="5920000" />
-      <workItem from="1581601324888" duration="3868000" />
+      <workItem from="1581601324888" duration="4489000" />
+      <workItem from="1581651929460" duration="1407000" />
+      <workItem from="1581657617755" duration="1207000" />
+      <workItem from="1581676836017" duration="3047000" />
+      <workItem from="1581686221322" duration="602000" />
+      <workItem from="1581848094200" duration="4079000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
