@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="294dd9ea-c350-4ade-8b7f-497c1c04afca" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cy41.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hello.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/testTCP/upd/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/testTCP/upd/Receive.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/testTCP/upd2/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/testTCP/upd2/Server.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/testTCP/upd2/UserThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="294dd9ea-c350-4ade-8b7f-497c1c04afca" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,7 +138,16 @@
       <workItem from="1581676836017" duration="3047000" />
       <workItem from="1581686221322" duration="602000" />
       <workItem from="1581848094200" duration="4079000" />
+      <workItem from="1581853830785" duration="266000" />
     </task>
+    <task id="LOCAL-00001" summary="upd">
+      <created>1581854078881</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1581854078881</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,5 +165,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="upd" />
+    <option name="LAST_COMMIT_MESSAGE" value="upd" />
   </component>
 </project>
